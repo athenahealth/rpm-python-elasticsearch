@@ -59,6 +59,6 @@ rm -rf %{buildroot}
 * Tue Aug 12 2014 Matt Dainty <matt@bodgit-n-scarper.com> 1.2.0-2
 - Update dependencies, patch urllib requirement back down.
 * Tue Aug 12 2014 Matt Dainty <matt@bodgit-n-scarper.com> 1.2.0-1
-- 
+- Bump to 1.2.0.
 * Mon Jun 23 2014 Matt Dainty <matt@bodgit-n-scarper.com> 1.0.0-1
 - Initial build.
