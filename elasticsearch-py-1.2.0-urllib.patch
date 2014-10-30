@@ -1,0 +1,12 @@
+diff -up elasticsearch-py-1.2.0/setup.py.orig elasticsearch-py-1.2.0/setup.py
+--- elasticsearch-py-1.2.0/setup.py.orig	2014-08-12 10:08:38.643339969 +0000
++++ elasticsearch-py-1.2.0/setup.py	2014-08-12 10:08:44.712437366 +0000
+@@ -13,7 +13,7 @@ long_description = f.read().strip()
+ f.close()
+ 
+ install_requires = [
+-    'urllib3>=1.8, <2.0',
++    'urllib3>=1.5, <2.0',
+ ]
+ tests_require = [
+     'requests>=1.0.0, <3.0.0',
