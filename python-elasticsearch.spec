@@ -8,19 +8,19 @@
 
 Name:		python-elasticsearch
 Version:	1.2.0
-Release:	3%{?dist}
+Release:	4%{?dist}
 Summary:	Python client for Elasticsearch
 
-Group:		Development/Libraries
-License:	Apache
-URL:		https://github.com/elasticsearch/elasticsearch-py
-Source0:	https://github.com/elasticsearch/elasticsearch-py/archive/%{version}.tar.gz
-Patch0:     https://raw.github.com/mwhahaha/rpm-%{name}/master/%{srcname}-1.2.0-urllib.patch
-BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
-BuildArch:	noarch
+Group:     Development/Libraries
+License:   Apache
+URL:		   https://github.com/elasticsearch/elasticsearch-py
+Source0:	 https://github.com/elasticsearch/elasticsearch-py/archive/%{version}.tar.gz
+Patch0:    https://raw.github.com/athenahealth/rpm-%{name}/master/%{srcname}-1.2.0-urllib.patch
+BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
+BuildArch: noarch
 
-BuildRequires:	python-setuptools
-Requires:       python-unittest2
+BuildRequires: python-setuptools
+Requires:      python-urllib3 python-argparse python-unittest2
 
 %description
 Official low-level client for Elasticsearch. It's goal is to provide common
@@ -54,6 +54,8 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Mon Mar 02 2015 Stas Alekseev <stas.alekseev@gmail.com> 1.4.0-1
+- Update dependencies.
 * Thu Oct 30 2014 Alex Schultz <aschultz@next-development.com> 1.2.0-3
 - Updates to the spec file
 * Tue Aug 12 2014 Matt Dainty <matt@bodgit-n-scarper.com> 1.2.0-2
